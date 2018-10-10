@@ -1,0 +1,31 @@
+.header{
+  font-size: 14px;
+}
+.header-content{
+  padding: 20px;
+  border-bottom: 2px solid #f9c700;
+}
+.username{
+  color: #f9c700;
+}
+.header-title{
+  line-height: 40px;
+}
+.breadcrumb{
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  width: 12.5%;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    width: 0;
+    height: 0;
+  }
+}
