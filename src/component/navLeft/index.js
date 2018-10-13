@@ -22,13 +22,26 @@ class Index extends Component{
                     <Menu.Item key="1">
                         <Icon type="pie-chart" />
                         <span>首页</span>
-                        <Link to='/admin/home'>首页</Link>
+                        <Link to='/admin/home'></Link>
                     </Menu.Item>
                     <Menu.Item key="2">
-                        <Icon type="desktop" />
-                        <span>第二页</span>
-                        <Link to='/admin/secondPage'></Link>
+                        <Icon type="pie-chart" />
+                        <span>订单管理</span>
+                        <Link to='/admin/indent'></Link>
                     </Menu.Item>
+                    <SubMenu title={<span><Icon type="mail" /><span>图册</span></span>}>
+                        <Menu.Item key="3">
+                            <Icon type="desktop" />
+                            <span>柱状图</span>
+                            <Link to='/admin/bar'></Link>
+                        </Menu.Item>
+                        <Menu.Item key="4">
+                            <Icon type="desktop" />
+                            <span>饼状图</span>
+                            <Link to='/admin/pie'></Link>
+                        </Menu.Item>
+                    </SubMenu>
+
                 </Menu>
             </div>
         )

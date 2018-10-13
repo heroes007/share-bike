@@ -8,8 +8,8 @@ class Index extends Component{
         super(props)
     }
     state = {
-        date:"2018.10.07 00:00:00",
-        weather:"小雨"
+        date:"",
+        weather:""
     }
 
     getTime = () => {
@@ -24,7 +24,6 @@ class Index extends Component{
 
     getWeather = () => {
         axios.get(`http://t.weather.sojson.com/api/weather/city/101030100`).then(res => {
-            console.log(res.data.forecast[1])
             const dataWeather = res.data.forecast[1]
             const weather = `${dataWeather.type}， ${dataWeather.low}~${dataWeather.high}， ${dataWeather.fx}${dataWeather.fl}`
             this.setState({
